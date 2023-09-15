@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .container-form{
+    @apply w-full p-6 m-auto rounded-md shadow-xl lg:max-w-xl dark:bg-slate-700
+   }
+
+  .wrapper{
+    @apply flex flex-col items-center h-screen
+  }
+
+}

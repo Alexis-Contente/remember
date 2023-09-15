@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .active{
+        @apply font-bold border-solid  border-slate-200
+    }
+
+    .notActive{
+        @apply border-solid  border-slate-200
+    }
+    
+    .page{
+        @apply h-screen flex flex-row overflow-y-scroll
+    }
+
+    .section{
+        @apply sticky z-0 top-4 p-2 ml-2 rounded-lg shadow-lg bg-white w-20
+    }
+
+    .itemlist{
+        @apply ml-6 pr-16 xl:pr-32
+    }
+
+    .image{
+        @apply w-96 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg
+    }
+
+    .item{
+        @apply block rounded-lg shadow-lg bg-white
+    }
+
+    .display-item{
+        @apply h-auto flex flex-row justify-start
+    }
+
+    .image-size{
+        @apply hidden lg:flex  basis-auto md:w-32 xl:w-32 lg:w-32
+    }
+
+    .resume{
+        @apply grow-0 shrink-0 basis-auto w-full lg:w-10/12
+    }
+
+    .desktop{
+        @apply text-gray-500  md:block mb-6 hidden dark:text-white
+    }
+    
+    .mobile{
+        @apply text-gray-500  md:hidden mb-6 block dark:text-white
+    }
+
+    .title-item{
+        @apply text-2xl font-bold mb-4
+    }
+    
+}

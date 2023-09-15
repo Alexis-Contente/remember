@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .item-list{
+        @apply flex flex-col w-full md:w-5/12 lg:w-5/12 xl:w-4/12 2xl:w-4/12  pb-16  
+    }
+
+    .item{
+        @apply block rounded-lg shadow-lg bg-white dark:bg-slate-700 dark:text-white
+    }
+
+    .image{
+        @apply w-96 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg
+    }
+
+    .fiche{
+        @apply grow-0 shrink-0 basis-auto w-full lg:w-10/12 
+    }
+
+    .fiche-element{
+        @apply px-6 h-full flex flex-col justify-center 2xl:gap-6 
+    }
+
+    .empty-list{
+        @apply flex flex-col items-center justify-center py-20 md:py-24 lg:py-32
+    }
+
+    .message{
+        @apply mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl dark:text-white
+    }
+
+    .optionValue{
+        @apply  dark:bg-blue-500
+    }
+
+}

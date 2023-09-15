@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .profile{
+        @apply flex flex-col mt-14 mb-20 lg:ml-96 lg:mr-96 lg:mt-40 lg:mb-40 
+    }
+
+    .title{
+        @apply text-3xl font-semibold leading-6 text-gray-900 mb-8 dark:text-white
+    }
+
+    .form-profile{
+        @apply w-full p-6 m-auto rounded-md shadow-xl lg:max-w-xl dark:bg-slate-700
+    }
+
+    .intitule{
+        @apply block text-sm font-semibold text-gray-800 dark:text-white
+    }
+
+    .input-form{
+        @apply block w-full px-4 py-2 mt-2 mb-6
+    }
+
+    .bg-btn{
+        @apply bg-gray-50 px-4 py-3 text-right sm:px-6 flex justify-center dark:bg-slate-700
+    }
+    
+}

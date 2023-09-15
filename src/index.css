@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import-normalize;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    height: 100vh;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+
+/* VARIABLE GLOBAL CSS */
+
+@layer components{
+
+    .button {
+        @apply tracking-wide text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg
+       }
+
+    .button-red {
+        @apply tracking-wide text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg
+       }
+
+    .input{
+        @apply  text-gradient bg-white border rounded-md focus:border-cyan-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40
+       }
+
+    .navlink{
+        @apply inline-block no-underline hover:text-blue-500 font-medium text-lg py-2 px-4 lg:-ml-2 dark:text-white
+       }
+
+    .text-gradient{
+        @apply text-transparent bg-gradient-to-r bg-clip-text from-blue-500 to-cyan-500
+       }
+
+    .libelle{
+        @apply block text-sm font-semibold text-gray-800 dark:text-white
+       }
+
+    .btn-list{
+        @apply uppercase font-bold py-2 px-4 rounded-full
+       }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .display {
+        @apply flex items-center justify-center w-screen h-screen dark:bg-slate-700
+    }
+
+    .displayMessage {
+        @apply flex flex-col items-center justify-center md:py-24 lg:py-32
+    }
+
+    .style404 {
+        @apply font-bold text-9xl
+    }
+
+    .styleText {
+        @apply mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl  dark:text-white
+    }
+
+    .styleFont {
+        @apply mb-8 text-center text-gray-500 md:text-lg  dark:text-white
+    }
+
+    .btn {
+        @apply px-6 py-2 p-2 rounded text-sm font-semibold
+    }
+    
+}

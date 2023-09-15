@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .actorList{
+    @apply text-gray-500 mb-6 text-start flex flex-wrap gap-2   dark:text-white
+   }
+
+   .directorList{
+    @apply text-gray-500 mb-6 text-start flex flex-wrap gap-2   dark:text-white
+   }
+
+   .synopsis{
+    @apply text-gray-500 mb-6 text-start flex flex-wrap gap-2   dark:text-white
+   }
+
+   .content-wrapper{
+    @apply flex flex-wrap items-center  rounded-lg shadow-lg  mb-32 text-gray-800  dark:bg-slate-600
+   }
+
+   .text-wrapper{
+    @apply grow-0 shrink-0 basis-auto w-full h-full lg:w-6/12 xl:w-8/12
+   }
+
+   .poster-wrapper{
+    @apply hidden lg:flex grow-0 shrink-0 basis-auto lg:w-6/12 xl:w-4/12
+   } 
+
+   .poster{
+    @apply w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg
+   }
+
+   .text-container{
+    @apply flex flex-col items-start px-2 py-12 md:px-12
+   }
+
+   .button-wrapper{
+    @apply w-full flex flex-col sm:flex-row sm:gap-0 gap-2  sm:w-auto flex justify-evenly
+   }
+
+   .category-button{
+    @apply tracking-wide text-white bg-gradient-to-r from-blue-500 to-cyan-500 uppercase font-bold py-2 px-4 mr-2 rounded-full
+   } 
+   
+}

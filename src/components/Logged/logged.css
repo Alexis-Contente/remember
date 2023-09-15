@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    .main{
+        @apply flex justify-center sm:gap-16 flex-col px-16 xl:px-32 mt-8
+    }
+
+    .categorie{
+        @apply uppercase bg-gradient-to-r text-white from-blue-500 to-cyan-500 rounded-md font-bold
+    }
+
+    .display-items{
+        @apply flex flex-col items-center mx-2 pt-5  sm:py-5 transition ease-in-out hover:scale-110
+    } /* max-w-20 */
+
+    .title-items{
+        @apply flex flex-wrap uppercase pt-1
+    } /* text-black-500 */
+
+    .image{
+        @apply flex justify-center rounded-lg
+    }
+}

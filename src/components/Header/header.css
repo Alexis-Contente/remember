@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .nav{
+    @apply z-[2000]  top-10 shadow-md border-b border-blue-400 flex flex-row items-center flex-initial sm:gap-6 justify-between px-6 sm:px-16 xl:px-32 py-1 dark:bg-gray-900 
+  }
+
+  .theme-btn{
+    @apply  w-11 h-6  bg-gray-200 rounded-full after:content-[''] 
+    after:absolute after:top-0.5 after:left-[2px] after:bg-white 
+    after:border-gray-300 after:border after:rounded-full after:h-5 
+    after:w-5 after:transition-all dark:border-gray-600 
+  }
+
+  .firstIsOpen{
+    @apply rotate-45 translate-y-3 opacity-50 group-hover:opacity-100
+  }
+
+  .secondIsOpen{
+    @apply -rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100
+  }
+  
+  .isClosed{
+    @apply opacity-50 group-hover:opacity-100
+  }
+
+  .genericHamburgerLine{ 
+    @apply w-8 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 h-1 w-8 my-1 rounded-full 
+  }
+
+  .burger-button{
+    @apply flex flex-col h-12 w-12 rounded justify-center items-center 
+  }
+  
+  .disconnect-btn{
+    @apply p-2 text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-md sm:w-36
+  } 
+  
+}
